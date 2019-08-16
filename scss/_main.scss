@@ -55,8 +55,8 @@ iframe {
 }
 .page-filter {
     background-color: $accent-color;
+    position: relative;
     form {
-        position: relative;
         padding: 10px 15px;
         display: flex;
         justify-content: space-between;
@@ -131,12 +131,14 @@ iframe {
         position: absolute;
         z-index: 1000;
         width: 235px;
-        height: 40px;
         background-color: #60c659;
         color: #ffffff;
         font-size: 18px;
-        border-radius: 5px;
+        border-radius: 5px 5px 0 0;
         font-family: 'Gotham Pro Medium';
+        top: -40px;
+        left:375px;
+        padding: 15px 22px;
     }
 
 }
@@ -356,6 +358,7 @@ iframe {
             margin-bottom: 10px;
             display: block;
             max-width: 270px;
+            text-align: center;
             &:hover {
                 border: 2px solid #ffbc21;
                 background: transparent;
@@ -564,6 +567,10 @@ iframe {
     display: flex;
     justify-content: space-between;
     &-item {
+        &:hover {
+            box-shadow: -4px 3px 8px 0px rgba(0,0,0,0.2);
+            border: none;
+        }
         &.wrap {
             padding: 0;
         }
