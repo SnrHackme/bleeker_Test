@@ -1,0 +1,803 @@
+@charset "UTF-8";
+body {
+  padding: 0;
+  margin: 0; }
+
+ul {
+  padding: 0;
+  margin: 0; }
+
+a {
+  text-decoration: none; }
+
+.wrapper {
+  max-width: 1920px;
+  margin: 0 auto; }
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56%; }
+
+iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%; }
+
+.page-main {
+  background-color: #ffffff;
+  padding: 13px 0; }
+
+.page-slider {
+  background-image: url(../img/slider-bg.jpg);
+  background-repeat: no-repeat; }
+  .page-slider__tours {
+    background-color: #f5fbfd;
+    padding-bottom: 150px; }
+    .page-slider__tours h2 {
+      font-size: 48px;
+      font-family: 'Gotham Pro Regular';
+      color: #3f3f3f;
+      padding-top: 100px;
+      margin-bottom: 70px; }
+  .page-slider__hotels {
+    background-color: #fff;
+    padding-bottom: 150px; }
+    .page-slider__hotels h2 {
+      font-size: 48px;
+      font-family: 'Gotham Pro Regular';
+      color: #3f3f3f;
+      padding-top: 100px;
+      margin-bottom: 70px; }
+
+.page-filter {
+  background-color: #60c659; }
+  .page-filter form {
+    position: relative;
+    padding: 10px 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .page-filter form input {
+      margin-right: 20px;
+      border: none; }
+    .page-filter form input[type="text"] {
+      background-color: #ffffff;
+      color: #3f3f3f;
+      outline: none;
+      border-radius: 5px;
+      padding: 15px 20px; }
+      .page-filter form input[type="text"]::-webkit-input-placeholder {
+        color: #3f3f3f; }
+      .page-filter form input[type="text"]:-ms-input-placeholder {
+        color: #3f3f3f; }
+      .page-filter form input[type="text"]::-ms-input-placeholder {
+        color: #3f3f3f; }
+      .page-filter form input[type="text"]::placeholder {
+        color: #3f3f3f; }
+    .page-filter form #tags {
+      -ms-flex-preferred-size: 40%;
+          flex-basis: 40%;
+      background-image: url(../img/marker.png);
+      display: block;
+      width: 17px;
+      height: 20px;
+      background-repeat: no-repeat;
+      background-position: 20px center;
+      padding-left: 50px; }
+    .page-filter form #datepicker {
+      -ms-flex-preferred-size: 15%;
+          flex-basis: 15%;
+      background-image: url(../img/datepicker.png);
+      display: block;
+      width: 17px;
+      height: 20px;
+      background-repeat: no-repeat;
+      background-position: 20px center;
+      padding-left: 50px; }
+    .page-filter form #btns {
+      -ms-flex-preferred-size: 26%;
+          flex-basis: 26%;
+      background-image: url(../img/person.png);
+      display: block;
+      width: 17px;
+      height: 20px;
+      background-repeat: no-repeat;
+      background-position: 20px center;
+      padding-left: 50px; }
+    .page-filter form input[type="submit"] {
+      background: -webkit-gradient(linear, left top, right top, from(#ff7f1e), to(#ffbc21));
+      background: linear-gradient(90deg, #ff7f1e, #ffbc21);
+      outline: none;
+      border: none;
+      font-size: 12px;
+      font-family: 'Gotham Pro Bold';
+      text-transform: uppercase;
+      color: #fff;
+      border-radius: 4px;
+      padding: 18px 45px;
+      -webkit-transition: 0.3s;
+      transition: 0.3s;
+      cursor: pointer; }
+      .page-filter form input[type="submit"]:hover {
+        background: -webkit-gradient(linear, right top, left top, from(#ff7f1e), to(#ffbc21));
+        background: linear-gradient(270deg, #ff7f1e, #ffbc21); }
+      .page-filter form input[type="submit"]:active {
+        background: #3f3f3f;
+        border: 1px solid #3f3f3f; }
+  .page-filter:before {
+    content: 'Шукайте пропозиції';
+    display: block;
+    position: absolute;
+    z-index: 1000;
+    width: 235px;
+    height: 40px;
+    background-color: #60c659;
+    color: #ffffff;
+    font-size: 18px;
+    border-radius: 5px;
+    font-family: 'Gotham Pro Medium'; }
+
+.page-service {
+  padding-bottom: 135px; }
+
+.page-benefits {
+  padding-top: 100px;
+  background-color: #f5fbfd; }
+
+.page-footer {
+  background-color: #3f3f3f; }
+
+.page-copyright {
+  background-color: #333333;
+  padding: 10px 10px; }
+  .page-copyright p {
+    color: #e0e0e0;
+    font-family: 'Gotham Pro Regular';
+    font-size: 12px; }
+
+.wrap {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px; }
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1170px;
+  margin: 0 auto; }
+  .header-logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .header-logo__img {
+      display: block;
+      width: 75px;
+      height: 75px;
+      background-image: url(../img/logo.png); }
+    .header-logo__desc {
+      font-family: 'Gotham Pro Regular';
+      font-size: 14px;
+      margin-top: 4px; }
+  .header-list {
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-size: 14px;
+    -ms-flex-preferred-size: 52%;
+        flex-basis: 52%; }
+    .header-list__item {
+      padding-bottom: 10px;
+      border-bottom: 3px solid transparent;
+      -webkit-transition: 0.3s;
+      transition: 0.3s;
+      font-family: 'Gotham Pro Bold'; }
+      .header-list__item:hover {
+        border-bottom: 3px solid #60c659; }
+    .header-list__link {
+      color: black;
+      text-transform: uppercase; }
+  .header-phones {
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .header-phones__item {
+      margin-bottom: 5px; }
+      .header-phones__item:first-child {
+        font-family: 'Gotham Pro Bold';
+        margin-bottom: 9px; }
+        .header-phones__item:first-child a {
+          font-family: inherit;
+          font-size: 16px; }
+        .header-phones__item:first-child span {
+          font-size: 12px;
+          font-family: 'Gotham Pro Regular';
+          padding-top: 5px;
+          padding-left: 3px; }
+    .header-phones__link {
+      font-size: 14px;
+      color: #3f3f3f;
+      font-family: 'Gotham Pro Regular';
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+    .header-phones__logo {
+      display: block; }
+    .header-phones__logo.kyiv {
+      width: 17px;
+      height: 17px;
+      background-image: url(../img/kyiv-logo.png);
+      margin-right: 6px; }
+    .header-phones__logo.vodafone {
+      width: 20px;
+      height: 21px;
+      background-image: url(../img/vodagone-logo.png);
+      margin-right: 3px; }
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .footer-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-family: 'Gotham Pro Regular'; }
+    .footer-info a {
+      color: #e0e0e0;
+      font-size: 12px; }
+    .footer-info ul {
+      padding: 0;
+      margin: 0;
+      list-style-type: none; }
+      .footer-info ul li {
+        margin-bottom: 10px; }
+        .footer-info ul li a:hover {
+          color: #ffbc21; }
+    .footer-info h3 {
+      color: #fff;
+      font-size: 18px; }
+    .footer-info .socials {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-preferred-size: 39%;
+          flex-basis: 39%;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      .footer-info .socials h3 {
+        font-size: 14px; }
+      .footer-info .socials i {
+        margin-right: 10px; }
+    .footer-info .map-site {
+      -ms-flex-preferred-size: 27%;
+          flex-basis: 27%; }
+      .footer-info .map-site .list-group {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between; }
+    .footer-info .contacts {
+      -ms-flex-preferred-size: 19%;
+          flex-basis: 19%; }
+      .footer-info .contacts ul li:first-child {
+        margin-bottom: 9px; }
+        .footer-info .contacts ul li:first-child a {
+          font-size: 16px; }
+        .footer-info .contacts ul li:first-child span {
+          font-size: 12px;
+          padding-top: 5px;
+          padding-left: 3px; }
+      .footer-info .contacts ul li:last-child {
+        margin-top: 25px; }
+      .footer-info .contacts ul li a:hover {
+        color: #e0e0e0; }
+
+.promo-list {
+  font-family: 'Gotham Pro Bold';
+  padding-top: 115px;
+  padding-bottom: 90px; }
+  .promo-list-item__title {
+    font-size: 120px;
+    color: #ffffff;
+    text-transform: uppercase;
+    border-left: 10px solid #ffffff;
+    padding-left: 30px;
+    line-height: 0.75;
+    margin: 0 0 72px 0;
+    letter-spacing: -1.5px; }
+    .promo-list-item__title span {
+      display: block;
+      font-size: 48px;
+      text-transform: initial;
+      letter-spacing: initial;
+      margin-bottom: 15px; }
+  .promo-list-item__btn {
+    color: #ffbc21;
+    font-size: 16px;
+    padding: 14px 48px;
+    border: 2px solid #ffbc21;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: -0.15px;
+    margin-bottom: 10px;
+    display: block;
+    max-width: 270px; }
+    .promo-list-item__btn:hover {
+      border: 2px solid #ffbc21;
+      background: transparent;
+      color: #ffffff; }
+    .promo-list-item__btn:active {
+      background: -webkit-gradient(linear, right top, left top, from(#ff7f1e), to(#ffbc21));
+      background: linear-gradient(270deg, #ff7f1e, #ffbc21);
+      border: 2px solid #ffbc21;
+      color: #ffffff; }
+  .promo-list .owl-nav {
+    color: white;
+    font-size: 80px;
+    font-family: 'Gotham Pro Regular'; }
+  .promo-list .owl-prev {
+    position: absolute;
+    top: 38%;
+    right: calc(50% + 638px); }
+    .promo-list .owl-prev:focus {
+      outline: none; }
+  .promo-list .owl-next {
+    position: absolute;
+    top: 38%;
+    left: calc(50% + 638px); }
+    .promo-list .owl-next:focus {
+      outline: none; }
+
+.service-list {
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-template-areas: "a a a" "b c d" "e f g"; }
+  .service-list p {
+    max-width: 240px;
+    text-align: center;
+    font-family: 'Gotham Pro Medium';
+    font-size: 14px;
+    margin: 30px auto 60px; }
+  .service-list_item {
+    width: 122px;
+    height: 122px;
+    background-repeat: no-repeat;
+    display: block;
+    margin: auto; }
+  .service-list h2 {
+    grid-area: a;
+    font-size: 48px;
+    font-family: 'Gotham Pro Regular';
+    color: black;
+    margin-top: 100px;
+    margin-bottom: 70px; }
+  .service-list_item.item_1 {
+    background-image: url(../img/features_1.png);
+    grid-area: b; }
+  .service-list_item.item_2 {
+    background-image: url(../img/features_2.png);
+    grid-area: c; }
+  .service-list_item.item_3 {
+    background-image: url(../img/features_3.png);
+    grid-area: d; }
+  .service-list_item.item_4 {
+    background-image: url(../img/features_4.png);
+    grid-area: e; }
+  .service-list_item.item_5 {
+    background-image: url(../img/features_5.png);
+    grid-area: f; }
+  .service-list_item.item_6 {
+    background-image: url(../img/features_6.png);
+    grid-area: g; }
+
+.service-benefits {
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-template-areas: "a a" "b c" "d e" "f g" "h i"; }
+  .service-benefits.wrap {
+    padding: 0; }
+  .service-benefits p {
+    max-width: 380px;
+    font-family: 'Gotham Pro Medium';
+    font-size: 14px; }
+  .service-benefits > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 80px; }
+  .service-benefits_item {
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    display: block;
+    -ms-flex-item-align: center;
+        align-self: center;
+    margin-right: 47px;
+    background-position: center; }
+  .service-benefits h2 {
+    grid-area: a;
+    font-size: 48px;
+    font-family: 'Gotham Pro Regular';
+    color: black;
+    margin-top: 80px;
+    margin-bottom: 50px; }
+  .service-benefits_item.item_1 {
+    background-image: url(../img/benefits_1.png);
+    grid-area: b; }
+  .service-benefits_item.item_2 {
+    background-image: url(../img/benefits_2.png);
+    grid-area: c; }
+  .service-benefits_item.item_3 {
+    background-image: url(../img/benefits_3.png);
+    grid-area: d; }
+  .service-benefits_item.item_4 {
+    background-image: url(../img/benefits_4.png);
+    grid-area: e; }
+  .service-benefits_item.item_5 {
+    background-image: url(../img/benefits_5.png);
+    grid-area: f; }
+  .service-benefits_item.item_6 {
+    background-image: url(../img/benefits_6.png);
+    grid-area: g; }
+  .service-benefits_item.item_7 {
+    background-image: url(../img/benefits_7.png);
+    grid-area: h; }
+  .service-benefits_item.item_8 {
+    background-image: url(../img/benefits_8.png);
+    grid-area: i; }
+
+.footer-subscribe h3 {
+  font-size: 18px;
+  font-family: 'Gotham Pro Regular';
+  color: #e0e0e0; }
+.footer-subscribe input {
+  margin-right: 20px; }
+.footer-subscribe input[type="text"] {
+  background: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #e0e0e0;
+  color: #e0e0e0;
+  outline: none;
+  padding-bottom: 4px;
+  width: 200px; }
+  .footer-subscribe input[type="text"]::-webkit-input-placeholder {
+    color: #e0e0e0; }
+  .footer-subscribe input[type="text"]:-ms-input-placeholder {
+    color: #e0e0e0; }
+  .footer-subscribe input[type="text"]::-ms-input-placeholder {
+    color: #e0e0e0; }
+  .footer-subscribe input[type="text"]::placeholder {
+    color: #e0e0e0; }
+.footer-subscribe input[type="submit"] {
+  background-color: #00a3dd;
+  outline: none;
+  font-size: 12px;
+  font-family: 'Gotham Pro Bold';
+  text-transform: uppercase;
+  border: 1px solid #00a3dd;
+  color: #fff;
+  border-radius: 4px;
+  padding: 7px 23px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer; }
+  .footer-subscribe input[type="submit"]:hover {
+    background-color: #01bcfe; }
+  .footer-subscribe input[type="submit"]:active {
+    background-color: #3f3f3f;
+    border: 1px solid #3f3f3f; }
+
+.tours-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .tours-list-item {
+    background-color: #ffffff;
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+    border: 1px solid #dee3e5; }
+    .tours-list-item.wrap {
+      padding: 0; }
+    .tours-list-item__thumb {
+      position: relative; }
+      .tours-list-item__thumb a {
+        display: block;
+        width: 100%;
+        background-color: #00a3dd; }
+        .tours-list-item__thumb a img {
+          width: 100%; }
+    .tours-list-item__tag {
+      position: absolute;
+      background: -webkit-gradient(linear, left top, right top, from(#ff7f1e), to(#ffbc21));
+      background: linear-gradient(90deg, #ff7f1e, #ffbc21);
+      border-radius: 4px 4px 4px 0;
+      padding: 10px 15px;
+      font-family: 'Gotham Pro Bold';
+      font-size: 14px;
+      color: #fff;
+      left: 20px;
+      top: 20px; }
+    .tours-list-item__price {
+      background-color: #00a3dd;
+      padding: 15px 15px;
+      font-family: 'Gotham Pro Bold';
+      font-size: 22px;
+      color: #fff; }
+      .tours-list-item__price span img {
+        width: initial !important;
+        display: initial !important; }
+    .tours-list-item__content {
+      background-color: #ffffff;
+      padding: 20px 15px 30px 15px; }
+      .tours-list-item__content .title {
+        font-family: 'Gotham Pro Medium';
+        font-size: 20px;
+        color: #3f3f3f;
+        margin-top: 0;
+        margin-bottom: 20px; }
+      .tours-list-item__content .desc {
+        font-family: 'Gotham Pro Regular';
+        color: #5a5a5a;
+        font-size: 14px;
+        min-height: 80px; }
+      .tours-list-item__content .rate {
+        list-style-type: none;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        font-size: 14px;
+        font-family: 'Gotham Pro Regular';
+        color: #ffbc21;
+        margin-bottom: 20px; }
+        .tours-list-item__content .rate span {
+          margin-right: 10px; }
+      .tours-list-item__content .service-footer {
+        font-family: 'Gotham Pro Regular';
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        .tours-list-item__content .service-footer .mark {
+          background-color: #60c659;
+          color: #ffffff;
+          font-family: 'Gotham Pro Bold';
+          border-radius: 5px 5px 5px 0;
+          padding: 10px 15px;
+          margin-right: 10px; }
+        .tours-list-item__content .service-footer .mark-word {
+          color: #60c659;
+          font-family: 'Gotham Pro Bold';
+          margin-right: 10px; }
+        .tours-list-item__content .service-footer .point {
+          width: 2px;
+          height: 2px;
+          border-radius: 50%;
+          background-color: #939393;
+          margin-right: 10px; }
+        .tours-list-item__content .service-footer a {
+          color: #727272;
+          margin-right: 10px; }
+        .tours-list-item__content .service-footer i {
+          color: #ff7f1e; }
+  .tours-list .owl-nav {
+    color: black;
+    font-size: 80px;
+    font-family: 'Gotham Pro Regular'; }
+  .tours-list .owl-prev {
+    position: absolute;
+    top: 38%;
+    right: calc(50% + 638px); }
+    .tours-list .owl-prev:hover {
+      color: #ff7f1e !important; }
+    .tours-list .owl-prev:active {
+      background-color: #6f6f6f !important;
+      color: #fff !important; }
+    .tours-list .owl-prev:focus {
+      outline: none; }
+  .tours-list .owl-next {
+    position: absolute;
+    top: 38%;
+    left: calc(50% + 638px); }
+    .tours-list .owl-next:hover {
+      color: #ff7f1e !important; }
+    .tours-list .owl-next:active {
+      background-color: #6f6f6f !important;
+      color: #fff !important; }
+    .tours-list .owl-next:focus {
+      outline: none; }
+
+.hotels-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .hotels-list-item {
+    background-color: #ffffff;
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+    border: 1px solid #dee3e5; }
+    .hotels-list-item.wrap {
+      padding: 0; }
+    .hotels-list-item__thumb {
+      position: relative; }
+      .hotels-list-item__thumb a {
+        display: block;
+        width: 100%;
+        background-color: #00a3dd; }
+        .hotels-list-item__thumb a img {
+          width: 100%; }
+    .hotels-list-item__tag {
+      position: absolute;
+      background: -webkit-gradient(linear, left top, right top, from(#ff7f1e), to(#ffbc21));
+      background: linear-gradient(90deg, #ff7f1e, #ffbc21);
+      border-radius: 4px 4px 4px 0;
+      padding: 10px 15px;
+      font-family: 'Gotham Pro Bold';
+      font-size: 14px;
+      color: #fff;
+      left: 20px;
+      top: 20px; }
+    .hotels-list-item__price {
+      background-color: #00a3dd;
+      padding: 15px 15px;
+      font-family: 'Gotham Pro Bold';
+      font-size: 22px;
+      color: #fff; }
+      .hotels-list-item__price span img {
+        width: initial !important;
+        display: initial !important; }
+    .hotels-list-item__content {
+      background-color: #ffffff;
+      padding: 20px 15px 30px 15px; }
+      .hotels-list-item__content .title {
+        font-family: 'Gotham Pro Medium';
+        font-size: 20px;
+        color: #3f3f3f;
+        margin-top: 0;
+        margin-bottom: 20px; }
+      .hotels-list-item__content .desc {
+        font-family: 'Gotham Pro Regular';
+        color: #5a5a5a;
+        font-size: 14px;
+        min-height: 30px; }
+      .hotels-list-item__content .rate {
+        list-style-type: none;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        font-size: 14px;
+        font-family: 'Gotham Pro Regular';
+        color: #ffbc21;
+        margin-bottom: 20px; }
+        .hotels-list-item__content .rate span {
+          margin-right: 10px; }
+      .hotels-list-item__content .service-footer {
+        font-family: 'Gotham Pro Regular';
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        .hotels-list-item__content .service-footer .mark {
+          background-color: #60c659;
+          color: #ffffff;
+          font-family: 'Gotham Pro Bold';
+          border-radius: 5px 5px 5px 0;
+          padding: 10px 15px;
+          margin-right: 10px; }
+        .hotels-list-item__content .service-footer .mark-word {
+          color: #60c659;
+          font-family: 'Gotham Pro Bold';
+          margin-right: 10px; }
+        .hotels-list-item__content .service-footer .point {
+          width: 2px;
+          height: 2px;
+          border-radius: 50%;
+          background-color: #939393;
+          margin-right: 10px; }
+        .hotels-list-item__content .service-footer a {
+          color: #727272;
+          margin-right: 10px; }
+        .hotels-list-item__content .service-footer i {
+          color: #ff7f1e; }
+  .hotels-list .owl-nav {
+    color: black;
+    font-size: 80px;
+    font-family: 'Gotham Pro Regular'; }
+  .hotels-list .owl-prev {
+    position: absolute;
+    top: 38%;
+    right: calc(50% + 638px); }
+    .hotels-list .owl-prev:hover {
+      color: #ff7f1e !important; }
+    .hotels-list .owl-prev:active {
+      background-color: #6f6f6f !important;
+      color: #fff !important; }
+    .hotels-list .owl-prev:focus {
+      outline: none; }
+  .hotels-list .owl-next {
+    position: absolute;
+    top: 38%;
+    left: calc(50% + 638px); }
+    .hotels-list .owl-next:hover {
+      color: #ff7f1e !important; }
+    .hotels-list .owl-next:active {
+      background-color: #6f6f6f !important;
+      color: #fff !important; }
+    .hotels-list .owl-next:focus {
+      outline: none; }
+
+@font-face {
+  font-family: 'Gotham Pro Bold';
+  src: url("../fonts/GothamPro-Bold.eot");
+  src: url("../fonts/GothamPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro-Bold.woff") format("woff"), url("../fonts/GothamPro-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Gotham Pro Regular';
+  src: url("../fonts/GothamPro.eot");
+  src: url("../fonts/GothamPro.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro.woff") format("woff"), url("../fonts/GothamPro.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Gotham Pro Medium';
+  src: url("../fonts/GothamPro-Medium.eot");
+  src: url("../fonts/GothamPro-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro-Medium.woff") format("woff"), url("../fonts/GothamPro-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+/*# sourceMappingURL=style.css.map */
