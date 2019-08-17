@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="js/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/jquery.datepicker.extension.range.min.js"></script>
     <script src="js/owlcarousel/owl.carousel.min.js"></script>
     
     <script>
@@ -80,11 +81,15 @@ datepicker.regional.uk = {
 	dayNamesShort: [ "нед","пнд","вів","срд","чтв","птн","сбт" ],
 	dayNamesMin: [ "Нд","Пн","Вт","Ср","Чт","Пт","Сб" ],
 	weekHeader: "Тиж",
-	dateFormat: "dd.mm.yy",
+	dateFormat: "D.,dd.mm.yy",
 	firstDay: 1,
 	isRTL: false,
 	showMonthAfterYear: false,
     numberOfMonths: 2,
+    range: 'period',
+    onSelect: function(dateText, inst, extensionRange) {
+      $('#datepicker').val(extensionRange.startDateText + ' - ' + extensionRange.endDateText);
+    },
 	yearSuffix: "" };
 datepicker.setDefaults( datepicker.regional.uk );
 
@@ -94,8 +99,20 @@ return datepicker.regional.uk;
     $( function() {
     $( "#datepicker" ).datepicker( $.datepicker.regional[ "uk" ] );
   } );
-          });
-          
+  $( function() {
+    $( "#btns" ).spinner({
+      spin: function( event, ui ) {
+        if ( ui.value > 10 ) {
+          $( this ).spinner( "value", -10 );
+          return false;
+        } else if ( ui.value < -10 ) {
+          $( this ).spinner( "value", 10 );
+          return false;
+        }
+      }
+    });
+  } );
+          }); 
     </script>
 </head>
 <body>
